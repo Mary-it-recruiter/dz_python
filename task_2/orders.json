@@ -27,6 +27,90 @@
             "price": "10000",
             "buyer": "Petrov P.P.",
             "date": "11.01.2018"
+        },
+        {
+            "item": "Марк Лутц – Изучаем Python",
+            "quantity": "1",
+            "price": "700",
+            "buyer": "Иванов",
+            "date": "22.10.2018"
+        },
+        {
+            "item": "Р. Митчелл. Скрапинг веб-сайтов с помощью Python",
+            "quantity": "1",
+            "price": "500",
+            "buyer": "Иванов",
+            "date": "22.10.2018"
+        },
+        {
+            "item": "scaner",
+            "quantity": "20",
+            "price": "10000",
+            "buyer": "Petrov P.P.",
+            "date": "11.01.2018"
+        },
+        {
+            "item": "Марк Лутц – Изучаем Python",
+            "quantity": "1",
+            "price": "700",
+            "buyer": "Иванов",
+            "date": "22.10.2018"
+        },
+        {
+            "item": "Р. Митчелл. Скрапинг веб-сайтов с помощью Python",
+            "quantity": "1",
+            "price": "500",
+            "buyer": "Иванов",
+            "date": "22.10.2018"
+        },
+        {
+            "item": "scaner",
+            "quantity": "20",
+            "price": "10000",
+            "buyer": "Petrov P.P.",
+            "date": "11.01.2018"
+        },
+        {
+            "item": "Марк Лутц – Изучаем Python",
+            "quantity": "1",
+            "price": "700",
+            "buyer": "Иванов",
+            "date": "22.10.2018"
+        },
+        {
+            "item": "Р. Митчелл. Скрапинг веб-сайтов с помощью Python",
+            "quantity": "1",
+            "price": "500",
+            "buyer": "Иванов",
+            "date": "22.10.2018"
+        },
+        {
+            "item": "scaner",
+            "quantity": "20",
+            "price": "10000",
+            "buyer": "Petrov P.P.",
+            "date": "11.01.2018"
+        },
+        {
+            "item": "Марк Лутц – Изучаем Python",
+            "quantity": "1",
+            "price": "700",
+            "buyer": "Иванов",
+            "date": "22.10.2018"
+        },
+        {
+            "item": "Р. Митчелл. Скрапинг веб-сайтов с помощью Python",
+            "quantity": "1",
+            "price": "500",
+            "buyer": "Иванов",
+            "date": "22.10.2018"
+        },
+        {
+            "item": "scaner",
+            "quantity": "20",
+            "price": "10000",
+            "buyer": "Petrov P.P.",
+            "date": "11.01.2018"
         }
     ]
 }

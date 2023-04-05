@@ -37,6 +37,44 @@ os_code_list, os_type_list. В этой же функции создать гл�
 ПРОШУ ВАС НЕ УДАЛЯТЬ СЛУЖЕБНЫЕ ФАЙЛЫ TXT И ИТОГОВЫЙ ФАЙЛ CSV!!!
 """
 
+import re
 
-os_prod_reg = re.compile(r'Изготовитель системы:\s*\S*')
-os_prod_list.append(os_prod_reg.findall(data)[0].split()[2])
+
+class Paparcer():
+    def __init__(self, source_files, result_file, search_list, ids=True):
+        self.source_files = source_files
+        self.result_file = result_file
+        self._headers = search_list
+        self.ids = ids
+
+        self.write_to_csv()
+
+    def get_data(self):
+        res = [self._headers]
+        count = 1
+        for file in self.source_files:
+            with open(file) as f_stream:
+                file_data = f_stream.read()
+                data_line = []
+                for el in range(len(res[0])):
+                    os_prod_reg = re.compile(rf'{self._headers[el]}:\s*\S*')
+                    data_line.append(
+                        (os_prod_reg.findall(file_data)[0].split()[-1]))
+                if self.ids:
+                    data_line.insert(0, str(count))
+                res.append(data_line)
+            count += 1
+        return res
+
+    def write_to_csv(self):
+        data = self.get_data()
+        with open(self.result_file, "w", encoding="utf8") as file_w:
+            for data_string in data:
+                file_w.write(','.join(data_string) + "\n")
+
+
+# в init вызываем write_to_csv()
+obj = Paparcer(["info_1.txt", "info_2.txt", "info_3.txt"],
+               "my_data_report.csv",
+               ["Изготовитель системы", "Название ОС",
+                "Код продукта", "Тип системы"])
